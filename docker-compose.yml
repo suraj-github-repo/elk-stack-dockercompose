@@ -32,8 +32,8 @@ services:
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,z
       - ./logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro,z
-      # - ./logstash/pipeline/gelf:/usr/share/logstash/pipeline/gelf:ro,z
-      # - ./logstash/pipeline/beats:/usr/share/logstash/pipeline/beats:ro,z
+      - ./logstash/pipeline/gelf:/usr/share/logstash/pipeline/gelf:ro,z
+      - ./logstash/pipeline/beats:/usr/share/logstash/pipeline/beats:ro,z
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
