@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 services:
   curator:
@@ -10,5 +10,6 @@ services:
       - ./extensions/curator/config/delete_log_files_curator.yml:/usr/share/curator/config/delete_log_files_curator.yml:ro,Z
     networks:
       - elk
+    restart: always
     depends_on:
       - elasticsearch

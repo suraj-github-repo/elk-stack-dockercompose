@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3.8'
 
 services:
   logspout:
@@ -16,4 +16,4 @@ services:
       - elk
     depends_on:
       - logstash
-    restart: on-failure
+    restart: always

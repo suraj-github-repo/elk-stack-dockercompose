@@ -33,6 +33,7 @@ processors:
 
 output.elasticsearch:
   hosts: ['http://elasticsearch:9200']
+  hosts: ['http://3.235.169.121:9200'] 
   username: elastic
   password: changeme
 
